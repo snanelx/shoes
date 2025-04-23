@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="обувь;nike;adidas;dunk;jordan;forum">
+    <meta name="description" content="Здесь вы можете приобрести оригинальную обувь и вещи с сайтов Nike и Adidas!">
+    <title>RandomShop</title>
+    <link rel="shortcut icon" href="./assets/img/logo/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css' 
+    integrity='sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay' rel='stylesheet'/>
+    <script src="https://kit.fontawesome.com/b15ca057c2.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <div id="content">
+        <header class="header">
+            <a href="./shoes">RandomShop
+            </a>
+            <nav class="header__nav">
+                <li><a href="./catalog/cart" class="nav-link">Корзина</a></li> 
+                <li><a href="./delivery" class="nav-link">Доставка</a></li>
+                <li><a href="https://t.me/RandomSnop" class="nav-link">Отзывы</a></li>
+                <li><a href="./privacy" class="nav-link">Политика конфиденциальности</a></li>
+            </nav>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="./catalog/cart">Корзина</a></li>
+                    <li><a class="menu__item" href="./delivery">Доставка</a></li>
+                    <li><a class="menu__item" href="https://t.me/RandomSnop">Отзывы</a></li>
+                    <li><a class="menu__item" href="./privacy">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="main" id="up" style="min-height: calc(100vh - 190px);">
+            <form id="form-id" class="form-enter">
+                <label for="login">Введите логин</label>
+                <input type="text" placeholder="Логин..." name="login" required>
+                <label for="login">Введите пароль</label>
+                <div class="password">
+                    <input type="password" placeholder="Пароль..." id="pass" name="pass" required>
+                    <i class="fa fa-eye glass" aria-hidden="true" id="visible"></i>
+                </div>
+                <button type="submit">Вход</button>
+            </form>
+          
+        </div>
+        <footer class="footer">
+            <div class="footer__container">
+                <a href="./shoes">RandomShop
+                </a>
+                <br><br><br><br>
+                © 2024 RandomShop - Все права защищены.
+            </div>
+            <p>
+                5533 Waters Edge Way, Playa Vista, CA 90094, Соединенные Штаты
+                <br><br>
+                RandomShop123@gmail.com 
+                <br><br>
+                TG: @snanelx 
+            </p>
+            <nav class="footer__nav">
+                <li><a href="./shoes" class="nav-link">Каталог</a></li>
+                <li><a href="./delivery" class="nav-link">Доставка</a></li>
+                <li><a href="https://t.me/RandomSnop" class="nav-link">Отзывы</a></li>
+                <li><a href="./privacy" class="nav-link">Политика</a></li>            
+            </nav>
+        </footer>
+    </div>
+    <a href="#up" class="ul-upbutton">
+		<div class="ul-upbutton-icon" style="opacity: 0.6;"><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
+	</a>
+    <script>
+        document.getElementById('visible').addEventListener('click', function () {
+            if (document.getElementById('visible').classList.contains('fa-eye-slash')) {
+                document.getElementById('visible').classList.add('fa-eye')
+                document.getElementById('visible').classList.remove('fa-eye-slash')
+                document.getElementById('pass').type = 'password'
+            }
+            else {
+                document.getElementById('visible').classList.remove('fa-eye')
+                document.getElementById('visible').classList.add('fa-eye-slash')
+                document.getElementById('pass').type = 'text'
+            }
+        })
+    </script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/push_admin.js"></script>
+    <script src="./assets/js/admin.js"></script>
+</body>
+</html>

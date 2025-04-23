@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="обувь;nike;adidas;dunk;jordan;forum">
+    <meta name="description" content="Здесь вы можете приобрести оригинальную обувь и вещи с сайтов Nike и Adidas!">
+    <title>RandomShop</title>
+    <link rel="shortcut icon" href="../assets/img/logo/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css' 
+    integrity='sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay' rel='stylesheet'/>
+    <script src="https://kit.fontawesome.com/b15ca057c2.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"></script>
+</head>
+<body>
+    <div id="content">
+        <header class="header">
+            <a href="../shoes">RandomShop
+            </a>
+            <nav class="header__nav">
+                <li><a href="../shoes" class="nav-link">Главная</a></li> 
+                <li><a href="../delivery" class="nav-link">Доставка</a></li>
+                <li><a href="https://t.me/RandomSnop" class="nav-link">Отзывы</a></li>
+                <li><a href="../privacy" class="nav-link">Политика конфиденциальности</a></li>
+            </nav>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="../shoes">Главная</a></li>
+                    <li><a class="menu__item" href="../delivery">Доставка</a></li>
+                    <li><a class="menu__item" href="https://t.me/RandomSnop">Отзывы</a></li>
+                    <li><a class="menu__item" href="../privacy">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+        </header>
+       <div class="main" id="up" style="min-height: calc(100vh - 190px);">
+        
+            <div class="cart">
+                <h1>
+                    Корзина
+                </h1>
+                <p style="display: none;" class="empty">Пусто...</p>
+                <div class="cart-element cart-el1">
+                    <img src="" alt="" class="cart-img">
+                    <div class="cart-title">
+                        <h3 id="name">
+                            
+                        </h3>
+                        <p>
+                           Size <b id="size"></b>
+                        </p>
+                    </div>
+                    <div class="cart-info">
+                        <div class="cart-count">
+                            <button type="button" id="min" onclick="minus()"><img src="../assets/img/arrows_circle_minus.svg" alt=""></button>
+                            <span id="count"></span>
+                            <button type="button" id="plus" onclick="plus()"><img src="../assets/img/arrows_circle_plus.svg" alt=""></button>
+                        </div>
+                        <div class="cart-price"> <b id="price"></b>  ₽ </div>
+                        <div class="cart-delete">
+                            <button type="button" onclick="reset()"><img src="../assets/img/arrows_circle_remove.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-element cart-el2" style="display: none;">
+                    <img src="" alt="img" class="cart-img img2">
+                    <div class="cart-title">
+                        <h3 id="name2">
+                            
+                        </h3>
+                        <p>
+                           Size <b id="size2"></b>
+                        </p>
+                    </div>
+                    <div class="cart-info">
+                        <div class="cart-count">
+                            <button type="button" id="min2" onclick="minus2()"><img src="../assets/img/arrows_circle_minus.svg" alt=""></button>
+                            <span id="count2"></span>
+                            <button type="button" id="plus2" onclick="plus2()"><img src="../assets/img/arrows_circle_plus.svg" alt=""></button>
+                        </div>
+                        <div class="cart-price"> <b id="price2"></b>  ₽ </div>
+                        <div class="cart-delete">
+                            <button type="button" onclick="reset2()"><img src="../assets/img/arrows_circle_remove.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="itog">Итого: <b id="itogi"> </b> ₽</h1>
+            </div>
+            <div class="checkout">
+                <h1>
+                    Заказ
+                </h1>
+                <form name='registration' onSubmit="return formValidation();" class="checkout-form">
+                    <div class="coln">
+                        <label for="email">Введите email</label>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <label for="tel">Введите номер телефона</label> 
+                        <input type="text" 
+                        class="phone-field"
+                        name="phone" 
+                        placeholder="Номер телефона" 
+                        data-rule-required="true" 
+                        data-rule-minlength="10" 
+                        data-msg="Введите номер телефона" required>
+                        <label for="fio">Получатель (ФИО)</label>
+                        <input type="text" name="fio" placeholder="Иванов Иван Иваныч" required>
+                    </div>
+                    <div class="coln">
+                        <label for="city">Город</label>
+                        <input type="search" name="city" placeholder="Москва" required>
+                        <label for="address">Адрес CDEK</label>
+                        <input type="text" name="address" placeholder="Улица ..." required>
+                        <label for="comment">Комментарий к заказу</label>
+                        <textarea name="comment" cols="30" rows="10" placeholder="Комментарий..."></textarea>
+                        <button type="submit" class="oplata-btn">Оплатить</button>
+                    </div>
+                </form>
+            </div>
+       </div>
+        <footer class="footer">
+            <div class="footer__container">
+                <a href="../shoes">RandomShop
+                </a>
+                <br><br><br><br>
+                © 2024 RandomShop - Все права защищены.
+            </div>
+            <p>
+                5533 Waters Edge Way, Playa Vista, CA 90094, Соединенные Штаты
+                <br><br>
+                RandomShop123@gmail.com 
+                <br><br>
+                TG: @snanelx 
+            </p>
+            <nav class="footer__nav">
+                <li><a href="../shoes" class="nav-link">Каталог</a></li>
+                <li><a href="../delivery" class="nav-link">Доставка</a></li>
+                <li><a href="https://t.me/RandomSnop" class="nav-link">Отзывы</a></li>
+                <li><a href="../privacy" class="nav-link">Политика</a></li>            
+            </nav>
+        </footer>
+    </div>
+    <a href="#up" class="ul-upbutton">
+		<div class="ul-upbutton-icon" style="opacity: 0.6;"><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
+	</a>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/add_cart.js"></script>
+    <script src="../assets/js/push_cart.js"></script>
+    <script src="../assets/js/form.js"></script>
+</body>
+</html>

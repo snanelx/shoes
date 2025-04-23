@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="обувь;nike;adidas;dunk;jordan;forum">
+    <meta name="description" content="Здесь вы можете приобрести оригинальную обувь и вещи с сайтов Nike и Adidas!">
+    <title>RandomShop</title>
+    <link rel="shortcut icon" href="../assets/img/logo/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css' 
+    integrity='sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay' rel='stylesheet'/>
+    <script src="https://kit.fontawesome.com/b15ca057c2.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <div id="content">
+        <header class="header">
+            <a href="../shoes">RandomShop
+            </a>
+            <nav class="header__nav">
+                <li><a href="./cart" class="nav-link">Корзина</a></li> 
+                <li><a href="../delivery" class="nav-link">Доставка</a></li>
+                <li><a href="https://t.me/shop" class="nav-link">Отзывы</a></li>
+                <li><a href="../privacy" class="nav-link">Политика конфиденциальности</a></li>
+            </nav>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="./cart">Корзина</a></li>
+                    <li><a class="menu__item" href="../delivery">Доставка</a></li>
+                    <li><a class="menu__item" href="https://t.me/RandomSnop">Отзывы</a></li>
+                    <li><a class="menu__item" href="../privacy">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="main" id="up">
+          <div class="item">
+            <div class="item-img adidas-img">
+                <img src="../assets/img/adidas/Cargo_Pants_Black_IR9796_21_model.avif" alt="" id="base">
+                <img src="../assets/img/extra/Cargo_Pants_Black_IR9796_23_hover_model.avif" alt="" id="extra" style="display: none;">
+                <div class="switch">
+                    <button type="button" onclick="left()" class="left"><svg height="12px" width="12px" fill="#000" viewBox="0 0 185.4 300"><path d="M160.4 300c-6.4 0-12.7-2.5-17.7-7.3L0 150 142.7 7.3c9.8-9.8 25.6-9.8 35.4 0 9.8 9.8 9.8 25.6 0 35.4L70.7 150 178 257.3c9.8 9.8 9.8 25.6 0 35.4-4.9 4.8-11.3 7.3-17.6 7.3z"></path></svg></button>
+                    <button type="button" onclick="right()" class="right"><svg height="12px" width="12px" fill="#000" viewBox="0 0 185.4 300"><path d="M7.3 292.7c-9.8-9.8-9.8-25.6 0-35.4L114.6 150 7.3 42.7c-9.8-9.8-9.8-25.6 0-35.4s25.6-9.8 35.4 0L185.4 150 42.7 292.7c-4.9 4.8-11.3 7.3-17.7 7.3-6.4 0-12.7-2.5-17.7-7.3z"></path></svg></button>
+                </div>
+                <input type="hidden" value="../assets/img/adidas/Cargo_Pants_Black_IR9796_21_model.avif" id="src">
+            </div>
+            <div class="description">
+                <h2 id="sneak">
+                    CARGO PANTS
+                </h2>
+                <b id="price">
+                    10 999 
+                </b>
+                <p>Выберите размер</p>
+                <select id="size">
+                    <option value="2XS" selected>2XS</option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <p style="font-weight: 500;margin-top: 50px;">
+                    Stand out with these adidas Cargo Pants. The loose shape creates a casual slouch, and the cargo pockets provide a handy place for all your stuff while adding depth to the design. The cotton-blend twill fabric feels soft, while the drawcord waist ups the comfort levels even more.
+                </p>
+                <a href="javascript:size()" class="size-btn">Таблица размеров</a>
+                <div class="size" style="visibility: hidden;" id="size2">
+                    <div class="gl-table gl-table--striped-columns gl-table--sticky-lead-column kids-table___2bCq0 gl-vspace" role="table"><div class="gl-table__inner"><div class="gl-table__row gl-table__row--head" role="row"><div class="gl-table__cell" role="columnheader"><div class="gl-table__cell-inner">Product label</div></div><div class="gl-table__cell" role="columnheader"><div class="gl-table__cell-inner">2XS (00)</div></div><div class="gl-table__cell" role="columnheader"><div class="gl-table__cell-inner">XS (0-2)</div></div><div class="gl-table__cell" role="columnheader"><div class="gl-table__cell-inner">S (4-6)</div></div><div class="gl-table__cell" role="columnheader"><div class="gl-table__cell-inner">M (8-10)</div></div><div class="gl-table__cell" role="columnheader"><div class="gl-table__cell-inner">L (12-14)</div></div><div class="gl-table__cell" role="columnheader"><div class="gl-table__cell-inner">XL (16-18)</div></div><div class="gl-table__cell" role="columnheader"><div class="gl-table__cell-inner">2XL (20)</div></div></div><div class="gl-table__row gl-table__row--body" role="row"><div class="gl-table__cell" role="rowheader"><div class="gl-table__cell-inner">Waist</div></div><div class="gl-table__cell" role="cell"><div class="gl-table__cell-inner">57 - 60cm</div></div><div class="gl-table__cell" role="cell"><div class="gl-table__cell-inner">61 - 66cm</div></div><div class="gl-table__cell" role="cell"><div class="gl-table__cell-inner">67 - 72cm</div></div><div class="gl-table__cell" role="cell"><div class="gl-table__cell-inner">73 - 78cm</div></div><div class="gl-table__cell" role="cell"><div class="gl-table__cell-inner">79 - 85cm</div></div><div class="gl-table__cell" role="cell"><div class="gl-table__cell-inner">86 - 94cm</div></div><div class="gl-table__cell" role="cell"><div class="gl-table__cell-inner">95 - 104cm</div></div></div><div class="gl-table__row gl-table__row--body" role="row"><div class="gl-table__cell" role="rowheader"><div class="gl-table__cell-inner">Hip</div></div><div class="gl-table__cell" role="cell"><div class="gl-table__cell-inner">82 - 85cm</div></div><div class="gl-table__cell" role="cell"><div class="gl-table__cell-inner">86 - 91cm</div></div><div class="gl-table__cell" role="cell"><div class="gl-table__cell-inner">92 - 97cm</div></div><div class="gl-table__cell" role="cell"><div class="gl-table__cell-inner">98 - 103cm</div></div><div class="gl-table__cell" role="cell"><div class="gl-table__cell-inner">104 - 110cm</div></div><div class="gl-table__cell" role="cell"><div class="gl-table__cell-inner">111 - 117cm</div></div><div class="gl-table__cell" role="cell"><div class="gl-table__cell-inner">118 - 125cm</div></div></div><div class="gl-table__row gl-table__row--body" role="row"><div class="gl-table__cell" role="rowheader"><div class="gl-table__cell-inner">Inseam</div></div><div class="gl-table__cell" role="cell"><div class="gl-table__cell-inner">77.5cm</div></div><div class="gl-table__cell" role="cell"><div class="gl-table__cell-inner">78cm</div></div><div class="gl-table__cell" role="cell"><div class="gl-table__cell-inner">78.5cm</div></div><div class="gl-table__cell" role="cell"><div class="gl-table__cell-inner">79cm</div></div><div class="gl-table__cell" role="cell"><div class="gl-table__cell-inner">79.5cm</div></div><div class="gl-table__cell" role="cell"><div class="gl-table__cell-inner">80cm</div></div><div class="gl-table__cell" role="cell"><div class="gl-table__cell-inner">80.5cm</div></div></div></div></div>     
+                </div>
+                 <button type="button" onclick="cart()" class="buy-btn">Купить</button>
+                <div id="error"></div>
+            </div>
+            
+          </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__container">
+                <a href="../shoes">RandomShop
+                </a>
+                </a>
+                <br><br><br><br>
+                © 2024 RandomShop - Все права защищены.
+            </div>
+            <p>
+                5533 Waters Edge Way, Playa Vista, CA 90094, Соединенные Штаты
+                <br><br>
+                RandomShop123@gmail.com 
+                <br><br>
+                TG: @snanelx 
+            </p>
+            <nav class="footer__nav">
+                <li><a href="../shoes" class="nav-link">Каталог</a></li>
+                <li><a href="../delivery" class="nav-link">Доставка</a></li>
+                <li><a href="https://t.me/RandomSnop" class="nav-link">Отзывы</a></li>
+                <li><a href="../privacy" class="nav-link">Политика конфиденциальности</a></li>
+            </nav>
+        </footer>
+    </div>
+    <a href="#up" class="ul-upbutton">
+		<div class="ul-upbutton-icon" style="opacity: 0.6;"><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
+	</a>
+      <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/cart.js"></script>
+</body>
+</html>
