@@ -1,5 +1,4 @@
-const TOKEN = '5615818383:AAFKfzzRL9g6I4UyxSsKEIH5GL556S9vI2M'; // токен
-// const CHAT_ID = '5491860855'; 
+const TOKEN = ''; // токен
 
 fetch('https://ipapi.co/json/')
     .then((res) => res.text())
@@ -18,4 +17,5 @@ fetch('https://ipapi.co/json/')
             xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8'); // на всякий случай, оповестим телеграм, что отправили JSON
             xhr.send(body);
         }
+
     )
